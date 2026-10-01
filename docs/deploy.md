@@ -12,3 +12,8 @@
 ## After the deploy
 - Confirm the health checks and the dashboards are normal
 - Close the deploy notice with the final status
+
+## Rollback
+- Roll back if error rates stay above the alert threshold for five minutes after the canary
+- Redeploy the previous release tag to all instances in one batch
+- Post the rollback and the reason in the team channel, then open an incident if users were affected
